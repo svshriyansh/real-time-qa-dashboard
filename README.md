@@ -75,6 +75,8 @@ Backend runs at:
 
 http://127.0.0.1:8000
 
+---
+
 ### 🔧 Frontend Setup
 
 - cd frontend/qa-dashboard
@@ -84,6 +86,8 @@ http://127.0.0.1:8000
 Frontend runs at:
 
 http://localhost:3000
+
+---
 
 🔐 Environment Variables
 
