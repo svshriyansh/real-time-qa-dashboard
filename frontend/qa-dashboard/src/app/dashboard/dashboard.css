@@ -1,0 +1,150 @@
+/* Page layout */
+.dashboard {
+    min-height: 100vh;
+    background-color: #0f172a; /* dark slate */
+    padding: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  }
+  
+  /* Title */
+  .dashboard-title {
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  
+  /* Empty state */
+  .empty-text {
+    color: #94a3b8;
+  }
+  
+  /* Question card */
+  .card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Card header */
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Question text */
+  .question {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0f172a;
+    margin: 0;
+  }
+  
+  /* Timestamp */
+  .timestamp {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #64748b;
+  }
+  
+  /* Status badge */
+  .badge {
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .badge.pending {
+    background-color: #f59e0b;
+  }
+  
+  .badge.escalated {
+    background-color: #dc2626;
+  }
+  
+  .badge.answered {
+    background-color: #16a34a;
+  }
+  
+  /* Actions */
+  .actions {
+    margin-top: 12px;
+  }
+  
+  .btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-right: 8px;
+  }
+  
+  .btn-escalate {
+    border: 1px solid #dc2626;
+    background: transparent;
+    color: #dc2626;
+  }
+  
+  .btn-escalate:hover {
+    background: #fee2e2;
+  }
+  
+  .btn-answer {
+    border: 1px solid #16a34a;
+    background: transparent;
+    color: #16a34a;
+  }
+  
+  .btn-answer:hover {
+    background: #dcfce7;
+  }
+  .responses {
+  margin-top: 8px;
+}
+
+.response {
+  font-size: 13px;
+  color: #334155;
+  margin: 4px 0;
+}
+
+/* Response input */
+/* Response input */
+.response-input {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+  
+    /* 🔥 FORCE text color */
+    color: #000000 !important;
+  
+    background-color: #ffffff !important;
+    border-radius: 8px;
+    border: 2px solid #c7d2fe;
+    outline: none;
+  }
+  
+  /* 🔥 FORCE placeholder color */
+  .response-input::placeholder {
+    color: #000000 !important;
+    opacity: 1 !important;
+  }
+  
+  /* Focus state */
+  .response-input:focus {
+    border-color: #6366f1;
+    background-color: #ffffff !important;
+  }
+  
+  /* Disabled state */
+  .response-input:disabled {
+    background-color: #e5e7eb !important;
+    color: #6b7280 !important;
+    cursor: not-allowed;
+  }
+  
