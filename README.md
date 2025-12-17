@@ -1,27 +1,49 @@
 # Real-Time Q&A Dashboard
 
-A real-time Q&A system where guests can submit, view, respond, and escalate questions,
-and admins can mark questions as answered.
-
-## Tech Stack
-- Frontend: Next.js (React)
-- Backend: FastAPI
-- Realtime: WebSockets
-- Auth: JWT (Admin only)
-- Storage: In-memory (can be extended to DB)
+A real-time question & answer dashboard where users can post questions and responses, and admins can manage question status with live updates.
 
 ## Features
-- Submit questions (AJAX XMLHttpRequest validation)
-- Live dashboard with real-time updates
-- Escalated questions move to the top
-- Guests can respond and escalate
-- Admin-only “Mark Answered”
-- Admin notifications for new questions
 
-## Running the Project
+### Guest Users
+
+- Submit questions
+- View all questions in real time
+- Respond to questions
+- Escalate questions
+
+### Admin Users
+
+- Login as admin
+- Mark questions as answered
+- Receive notifications when new questions arrive
+
+### Real-Time Updates
+
+- WebSockets used to push updates instantly
+- Dashboard updates without refresh
+
+## Tech Stack
+
+- **Frontend:** Next.js (App Router), React
+- **Backend:** FastAPI
+- **Realtime:** WebSockets
+- **Auth:** Token-based admin auth
+- **Storage:** In-memory (as allowed by assignment)
+
+## Question Status Flow
+
+- `Pending`
+- `Escalated` (moves to top)
+- `Answered`
+
+## Setup Instructions
 
 ### Backend
+
 ```bash
 cd backend
+python -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 uvicorn main:app --reload
+```
